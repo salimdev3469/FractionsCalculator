@@ -1,0 +1,110 @@
+body{
+    background-color: aquamarine;
+    margin:0;
+}
+.container{
+    position:absolute;
+    left:570px;
+    width:450px;
+    top:240px;
+    height:245px;  
+    border-radius: 14px;
+    text-align: center;
+    background-color: rgb(31, 18, 90);
+}
+.container h2{
+    color:#fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.operations{
+    position:absolute;
+    transform:translate(-50%,-50%);
+    left:50%;
+    top:50%;
+    display:flex;
+}
+.errormessage{
+    color:rgb(154, 255, 30);
+    visibility: hidden;
+    display:block;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.btn{
+    position:relative;
+    margin-top:6em;
+    padding:8px 12px;
+    border-radius: 8px;
+    background-color: aqua;
+    border:none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+.result{
+    color:white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display:block;
+    margin-top:8px;
+    display:none;
+    
+}
+.scale{
+    animation: scaling 0.4s ease-in-out;
+}
+@keyframes scaling {
+    0%{
+        transform:scale(1);
+    }
+    50%,100%{
+        transform:scale(1.04);
+    }
+}
+.inputs{
+    margin-right: 10px;
+    border-radius: 8px;
+    outline:none;
+    border:none;
+}
+.inputs::placeholder{
+    font-size: 10px;
+    font-weight: 700;
+    color:black;
+}
+.display{
+    display:block !important;
+}
+.slashes{
+    color:#fff;
+    margin-top:7px;
+    margin-right:10px;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.shake{
+    animation-name:shaken;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+
+}
+@keyframes shaken {
+    0%, 100% {
+        transform: translateX(0);
+      }
+      25%, 75% {
+        transform: translateX(-10px);
+      }
+      50% {
+        transform: translateX(10px);
+      }
+}
+.operations select{
+    margin-right: 10px;
+    border-radius: 8px;
+    outline:none;
+}
+.inputs{
+    width:35px;
+    height:25px;
+    padding:6px 10px;
+}
